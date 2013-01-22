@@ -193,7 +193,7 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     // PRESS L1: function and symbol keys
     KB_MATRIX_LAYER( NULL,
     // left hand
-    NULL,       kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
+    NULL,       kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     ktrans,     sshprre,    sshprre,    kprrel,     kprrel,     sshprre,    ktrans,
     ktrans,     kprrel,     kprrel,     sshprre,    sshprre,    kprrel,
     ktrans,     sshprre,    sshprre,    sshprre,    sshprre,    sshprre,    ktrans,
