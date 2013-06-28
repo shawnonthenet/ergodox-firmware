@@ -8,6 +8,23 @@ and [deskthority]
 discussion threads.
 
 
+### Notes
+A rewrite is currently underway (see the 'partial-rewrite' branch) and so this
+branch isn't quite receiving the attention it used to.  Things that have
+changed since this document was last properly updated:
+* Ryan Prince ([judascleric] (https://github.com/judascleric)) implemented
+  sticky keys, and added a Colemak layout using them.
+* Revision 2 of the firmware (on the 'partial-rewrite' branch) is working!  Not
+  ready for merging or a general release though, and I'm not ready to declare
+  anything final, so you may not want to switch yet; but developers may want to
+  think about checking it out. :)
+* Ryan Prince ([judascleric] (https://github.com/judascleric)) implemented 3
+  media keys (play/pause, previous track, and next track) in Revision 1, using
+  a bit of code from [hasu's tmk firmware]
+  (https://github.com/tmk/tmk_keyboard).  Revision 2 probably won't have this
+  functionality for a while.
+
+
 ### Table of Contents
 *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
