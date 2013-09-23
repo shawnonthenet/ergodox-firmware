@@ -32,7 +32,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     _guiL,      _grave,     _backslash, _altL,      1,
     
                                                                 _ctrlL,     _altL,
-                                                    0,          0,          _home,
+                                                    _guiL,      0,          _home,
                                                     _space,     _enter,     _end,
 
     // right hand
@@ -43,7 +43,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
                             1,          _arrowL,    _arrowD,    _arrowU,    _arrowR,
 
     _altR,      _ctrlR,
-    _pageU,     0,          0,
+    _pageU,     0,          _guiR,
     _pageD,     _del,       _bs ),
 
 
@@ -57,8 +57,8 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     0,          0,          0,          0,          0,
 
                                                                 0,          0,
-                                                    0,          0,          0,
-                                                    0,          0,          0,
+                                                    0,          0,          _print,
+                                                    0,          0,          _scrollLock,
     // right hand
     _F12,       _F6,        _F7,        _F8,        _F9,        _F10,       _power,
     0,          0,          _equal,     _equal,     _dash,      _dash,      0,
@@ -67,8 +67,8 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
                             0,          0,          0,          0,          0,
 
     0,          0,
-    0,          0,          0,
-    0,          0,          0 ),
+    _pause,     0,          0,
+    _insert,    0,          0 ),
 
 
     // LAYOUT L2: QWERTY alphanum 
@@ -176,7 +176,7 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     kprrel,     kprrel,     kprrel,     kprrel,     lpush1,
     
                                                                 kprrel,     kprrel,
-                                                    NULL,       NULL,       kprrel,
+                                                    kprrel,     NULL,       kprrel,
                                                     kprrel,     kprrel,     kprrel,
     // right hand
     slpunum,    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
@@ -186,7 +186,7 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
                             lpush1,     kprrel,     kprrel,     kprrel,     kprrel,
 
     kprrel,     kprrel,
-    kprrel,     NULL,       NULL,
+    kprrel,     NULL,       kprrel,
     kprrel,     kprrel,     kprrel ),
     
 
@@ -200,8 +200,8 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     ktrans,     ktrans,     ktrans,     ktrans,     ktrans,
 
                                                                 ktrans,     ktrans,
-                                                    ktrans,     ktrans,     ktrans,
-                                                    ktrans,     ktrans,     ktrans,
+                                                    ktrans,     ktrans,     kprrel,
+                                                    ktrans,     ktrans,     kprrel,
     // right hand
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     ktrans,     kprrel,     kprrel,     sshprre,    kprrel,     sshprre,    kprrel,
@@ -210,8 +210,8 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
                             ktrans,     ktrans,     ktrans,     ktrans,     ktrans,
 
     ktrans,     ktrans,
-    ktrans,     ktrans,     ktrans,
-    ktrans,     ktrans,     ktrans ),
+    kprrel,     ktrans,     ktrans,
+    kprrel,     ktrans,     ktrans ),
 
     
     // PRESS L2: QWERTY 
@@ -278,7 +278,7 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
     kprrel,     kprrel,     kprrel,     kprrel,     lpop1,
 
                                                                 kprrel,     kprrel,
-                                                    NULL,       NULL,       kprrel,
+                                                    kprrel,       NULL,     kprrel,
                                                     kprrel,     kprrel,     kprrel,
     // right hand
     NULL,       kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
@@ -288,7 +288,7 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
                             lpop1,      kprrel,     kprrel,     kprrel,     kprrel,
 
     kprrel,     kprrel,
-    kprrel,     NULL,       NULL,
+    kprrel,     NULL,       kprrel,
     kprrel,     kprrel,     kprrel ),
 
 
@@ -302,8 +302,8 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
     ktrans,     ktrans,     ktrans,     ktrans,     ktrans,
 
                                                                 ktrans,     ktrans,
-                                                    ktrans,     ktrans,     ktrans,
-                                                    ktrans,     ktrans,     ktrans,
+                                                    ktrans,     ktrans,     kprrel,
+                                                    ktrans,     ktrans,     kprrel,
     // right hand
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     ktrans,     kprrel,     kprrel,     sshprre,    kprrel,     sshprre,    kprrel,
@@ -312,8 +312,8 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
                             ktrans,     ktrans,     ktrans,     ktrans,     ktrans,
                             
     ktrans,     ktrans,
-    ktrans,     ktrans,     ktrans,
-    ktrans,     ktrans,     ktrans ),
+    kprrel,     ktrans,     ktrans,
+    kprrel,     ktrans,     ktrans ),
 
 
     // RELEASE L2: QWERTY
