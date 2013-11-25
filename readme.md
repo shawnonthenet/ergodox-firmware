@@ -1,11 +1,15 @@
-# [ergodox-firmware][]: Firmware for the [ErgoDox keyboard][]
+# [Firmware][ergodox-firmware] for the [ErgoDox keyboard][]
 
 The official website is [ergodox.org] (http://www.ergodox.org).  
 Also see the [geekhack]
 (http://geekhack.org/showthread.php?22780-Interest-Check-Custom-split-ergo-keyboard)
 and [deskthority]
 (http://deskthority.net/workshop-f7/split-ergonomic-keyboard-project-t1753.html)
-discussion threads.
+discussion threads.  
+Kits are periodically for sale [on Massdrop] (https://www.massdrop.com/buy/ergodox),
+who also hosts [build instructions] (https://www.massdrop.com/ext/ergodox/assembly.php)
+and a [web UI] (https://www.massdrop.com/ext/ergodox)
+for configuring layouts.
 
 
 ### Notes
@@ -23,6 +27,14 @@ changed since this document was last properly updated:
   a bit of code from [hasu's tmk firmware]
   (https://github.com/tmk/tmk_keyboard).  Revision 2 probably won't have this
   functionality for a while.
+* Gyuri Horak implemented NKRO and mouse keys in [his branch]
+  (https://github.com/dyuri/ergodox-firmware) of rev-2.  Not merged, but I plan
+  to implement the features later, if I can.  See [Pull Request #28]
+  (https://github.com/benblazak/ergodox-firmware/pull/28).
+* Oleg Kostyuk (cub-uanic) [ported the TMK firmware]
+  (https://github.com/cub-uanic/tmk_keyboard)
+  (written by "hasu") to the ErgoDox!
+
 
 
 ### Table of Contents
