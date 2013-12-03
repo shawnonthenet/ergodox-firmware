@@ -51,8 +51,8 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     KB_MATRIX_LAYER( 0,
     // left hand
     0,          _F1,        _F2,        _F3,        _F4,        _F5,        _F11,
-    0,          _bracketL,  _bracketR,  _bracketL,  _bracketR,  _semicolon, 0,
-    0,          _backslash, _slash,     _9,         _0,         _semicolon,
+    0,          _bracketL,  _bracketR,  _bracketL,  _bracketR,  _grave,     0,
+    0,          _backslash, _slash,     _9,         _0,         _grave,
     0,          _1,         _2,         _3,         _4,         _5,         0,
     0,          0,          0,          0,          0,
 
