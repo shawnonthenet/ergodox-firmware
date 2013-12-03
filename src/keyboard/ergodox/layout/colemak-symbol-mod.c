@@ -173,10 +173,10 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     
     s2kcap,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     lpush2,
-    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
+    kprrel,     kprrel,     kprrel,     kprrel,     lpush1,
     
                                                                 kprrel,     kprrel,
-                                                    lpush1,     NULL,       kprrel,
+                                                    kprrel,     NULL,       kprrel,
                                                     kprrel,     kprrel,     kprrel,
     // right hand
     slpunum,    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
