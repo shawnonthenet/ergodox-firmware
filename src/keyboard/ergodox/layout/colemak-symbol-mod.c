@@ -51,8 +51,8 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     KB_MATRIX_LAYER( 0,
     // left hand
     0,          _F1,        _F2,        _F3,        _F4,        _F5,        _F11,
-    0,          _bracketL,  _bracketR,  _bracketL,  _bracketR,  _grave,     0,
-    0,          _backslash, _slash,     _9,         _0,         _grave,
+    0,          _backslash, _slash,     _bracketL,  _bracketR,  _grave,     0,
+    0,          _bracketL,  _bracketR,  _9,         _0,         _grave,
     0,          _1,         _2,         _3,         _4,         _5,         0,
     0,          0,          0,          0,          0,
 
@@ -194,8 +194,8 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     KB_MATRIX_LAYER( NULL,
     // left hand
     NULL,       kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
-    ktrans,     sshprre,    sshprre,    kprrel,     kprrel,     sshprre,    ktrans,
-    ktrans,     kprrel,     kprrel,     sshprre,    sshprre,    kprrel,
+    ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     sshprre,    ktrans,
+    ktrans,     sshprre,    sshprre,    sshprre,    sshprre,    kprrel,
     ktrans,     sshprre,    sshprre,    sshprre,    sshprre,    sshprre,    ktrans,
     ktrans,     ktrans,     ktrans,     ktrans,     ktrans,
 
@@ -296,8 +296,8 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
     KB_MATRIX_LAYER( NULL,
     // left hand
     NULL,       kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
-    ktrans,     sshprre,    sshprre,    kprrel,     kprrel,     sshprre,    ktrans,
-    ktrans,     kprrel,     kprrel,     sshprre,    sshprre,    kprrel,
+    ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     sshprre,    ktrans,
+    ktrans,     sshprre,    sshprre,    sshprre,    sshprre,    kprrel,
     ktrans,     sshprre,    sshprre,    sshprre,    sshprre,    sshprre,    ktrans,
     ktrans,     ktrans,     ktrans,     ktrans,     ktrans,
 
