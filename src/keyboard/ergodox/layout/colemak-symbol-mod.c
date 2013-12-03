@@ -29,10 +29,10 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     _tab,       _Q,         _W,         _F,         _P,         _G,         _esc,
     _ctrlL,     _A,         _R,         _S,         _T,         _D,
     _shiftL,    _Z,         _X,         _C,         _V,         _B,         2,
-    _guiL,      _grave,     _backslash, _altL,      1,
+    _guiL,      _grave,     _backslash, _altL,      _guiL,
     
                                                                 _ctrlL,     _altL,
-                                                    _guiL,      0,          _home,
+                                                    1,          0,          _home,
                                                     _space,     _enter,     _end,
 
     // right hand
@@ -40,10 +40,10 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     _esc,       _J,         _L,         _U,         _Y,         _semicolon, _backslash,
                 _H,         _N,         _E,         _I,         _O,         _quote,
     3,          _K,         _M,         _comma,     _period,    _slash,     _shiftR,
-                            1,          _arrowL,    _arrowD,    _arrowU,    _arrowR,
+                            _guiR,      _arrowL,    _arrowD,    _arrowU,    _arrowR,
 
     _altR,      _ctrlR,
-    _pageU,     0,          _guiR,
+    _pageU,     0,          1,
     _pageD,     _del,       _bs ),
 
 
@@ -173,20 +173,20 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     
     s2kcap,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     lpush2,
-    kprrel,     kprrel,     kprrel,     kprrel,     lpush1,
+    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     
                                                                 kprrel,     kprrel,
-                                                    kprrel,     NULL,       kprrel,
+                                                    lpush1,     NULL,       kprrel,
                                                     kprrel,     kprrel,     kprrel,
     // right hand
     slpunum,    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
                 kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     slpunum,    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     s2kcap,
-                            lpush1,     kprrel,     kprrel,     kprrel,     kprrel,
+                            kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
 
     kprrel,     kprrel,
-    kprrel,     NULL,       kprrel,
+    kprrel,     NULL,       lpush1,
     kprrel,     kprrel,     kprrel ),
     
 
@@ -275,20 +275,20 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     s2kcap,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     lpop2,
-    kprrel,     kprrel,     kprrel,     kprrel,     lpop1,
+    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
 
                                                                 kprrel,     kprrel,
-                                                    kprrel,       NULL,     kprrel,
+                                                    lpop1,      NULL,       kprrel,
                                                     kprrel,     kprrel,     kprrel,
     // right hand
     NULL,       kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
                 kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     slponum,    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     s2kcap,
-                            lpop1,      kprrel,     kprrel,     kprrel,     kprrel,
+                            kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
 
     kprrel,     kprrel,
-    kprrel,     NULL,       kprrel,
+    kprrel,     NULL,       lpop1,
     kprrel,     kprrel,     kprrel ),
 
 
