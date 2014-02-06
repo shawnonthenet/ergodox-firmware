@@ -25,14 +25,14 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     // LAYOUT L0: COLEMAK
     KB_MATRIX_LAYER( 0,
     // left hand
-    _equal,     _1,         _2,         _3,         _4,         _5,         2,
+    2,          _1,         _2,         _3,         _4,         _5,         _equal,
     _tab,       _Q,         _W,         _F,         _P,         _G,         _esc,
     _ctrlL,     _A,         _R,         _S,         _T,         _D,
     _shiftL,    _Z,         _X,         _C,         _V,         _B,         _tab,
     _guiL,      _grave,     _backslash, _altL,      1,
     
                                                                 _ctrlL,     _altL,
-                                                    _guiL,          0,          _home,
+                                                    _guiL,          0,      _home,
                                                     _space,     _enter,     _end,
 
     // right hand
@@ -169,7 +169,7 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     // PRESS L0: COLEMAK
     KB_MATRIX_LAYER( NULL,
     // left hand
-    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     lpush2,
+    lpush2,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     
     s2kcap,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
@@ -193,7 +193,7 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     // PRESS L1: function and symbol keys
     KB_MATRIX_LAYER( NULL,
     // left hand
-    NULL,       kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
+    ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     sshprre,    ktrans,
     ktrans,     sshprre,    sshprre,    sshprre,    sshprre,    kprrel,
     ktrans,     sshprre,    sshprre,    sshprre,    sshprre,    sshprre,    ktrans,
@@ -217,7 +217,7 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     // PRESS L2: QWERTY 
     KB_MATRIX_LAYER( NULL,
     // left hand
-    ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     lpop2,
+    lpop2,      kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
     ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
     ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     
     ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
@@ -271,7 +271,7 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
     // RELEASE L0: COLEMAK
     KB_MATRIX_LAYER( NULL,
     // left hand
-    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     NULL,
+    NULL,       kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     s2kcap,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
@@ -295,7 +295,7 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
     // RELEASE L1: function and symbol keys
     KB_MATRIX_LAYER( NULL,
     // left hand
-    NULL,       kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
+    ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     sshprre,    ktrans,
     ktrans,     sshprre,    sshprre,    sshprre,    sshprre,    kprrel,
     ktrans,     sshprre,    sshprre,    sshprre,    sshprre,    sshprre,    ktrans,
@@ -319,7 +319,7 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
     // RELEASE L2: QWERTY
     KB_MATRIX_LAYER( NULL,
     // left hand
-    ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     NULL,
+    NULL,       kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
     ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
     ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
