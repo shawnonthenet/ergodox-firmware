@@ -36,11 +36,11 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
                                                     _space,     _enter,     _end,
 
     // right hand
-    3,          _6,         _7,         _8,         _9,         _0,         _dash,
+    _dash,      _6,         _7,         _8,         _9,         _0,         3,
     _esc,       _J,         _L,         _U,         _Y,         _semicolon, _backslash,
                 _H,         _N,         _E,         _I,         _O,         _quote,
     3,          _K,         _M,         _comma,     _period,    _slash,     _shiftR,
-                            1,      _arrowL,    _arrowD,    _arrowU,    _arrowR,
+                             1,         _arrowL,    _arrowD,    _arrowU,    _arrowR,
 
     _altR,      _ctrlR,
     _pageU,     0,          _guiR,
@@ -108,7 +108,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
                                                     0,          0,          0,
                                                     0,          0,          0,
     // right hand
-    3,          0,          3,          _equal_kp,  _div_kp,    _mul_kp,    0,
+    0,          0,          0,          _equal_kp,  _div_kp,    _mul_kp,    0,
     0,          0,          _7_kp,      _8_kp,      _9_kp,      _sub_kp,    0,
                 0,          _4_kp,      _5_kp,      _6_kp,      _add_kp,    0,
     0,          0,          _1_kp,      _2_kp,      _3_kp,      _enter_kp,  0,
@@ -179,7 +179,7 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
                                                     kprrel,     NULL,       kprrel,
                                                     kprrel,     kprrel,     kprrel,
     // right hand
-    slpunum,    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
+    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     slpunum,
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
                 kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     slpunum,    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     s2kcap,
@@ -203,7 +203,7 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
                                                     ktrans,     ktrans,     kprrel,
                                                     ktrans,     ktrans,     kprrel,
     // right hand
-    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
+    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
     ktrans,     kprrel,     kprrel,     sshprre,    kprrel,     sshprre,    kprrel,
                 kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     ktrans,     sshprre,    sshprre,    sshprre,    sshprre,    sshprre,    ktrans,
@@ -251,7 +251,7 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
                                                     ktrans,     ktrans,     ktrans,
                                                     ktrans,     ktrans,     ktrans,
     // right hand
-    slponum,    ktrans,     slponum,    kprrel,     kprrel,     kprrel,     ktrans,
+    ktrans,     ktrans,     slponum,    kprrel,     kprrel,     kprrel,     slponum,
     ktrans,     ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
                 ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
     ktrans,     ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
@@ -281,7 +281,7 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
                                                     kprrel,       NULL,     kprrel,
                                                     kprrel,     kprrel,     kprrel,
     // right hand
-    NULL,       kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
+    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     NULL,
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
                 kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     slponum,    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     s2kcap,
@@ -305,7 +305,7 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
                                                     ktrans,     ktrans,     kprrel,
                                                     ktrans,     ktrans,     kprrel,
     // right hand
-    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
+    kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
     ktrans,     kprrel,     kprrel,     sshprre,    kprrel,     sshprre,    kprrel,
                 kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     ktrans,     sshprre,    sshprre,    sshprre,    sshprre,    sshprre,    ktrans,
@@ -319,7 +319,7 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
     // RELEASE L2: QWERTY
     KB_MATRIX_LAYER( NULL,
     // left hand
-    NULL,       kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
+    ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
     ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
     ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
     ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
@@ -353,7 +353,7 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
                                                     ktrans,     ktrans,     ktrans,
                                                     ktrans,     ktrans,     ktrans,
     // right hand
-    NULL,       ktrans,     NULL,       kprrel,     kprrel,     kprrel,     ktrans,
+    ktrans,     ktrans,     NULL,       kprrel,     kprrel,     kprrel,     ktrans,
     ktrans,     ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
                 ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
     lpop3,      ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
