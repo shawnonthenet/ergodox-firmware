@@ -273,6 +273,8 @@
 #define MEDIAKEY_PLAY_PAUSE    0x00
 #define MEDIAKEY_PREV_TRACK    0x01
 #define MEDIAKEY_NEXT_TRACK    0x02
+#define MEDIAKEY_FAST_FORWARD  0x03
+#define MEDIAKEY_REWIND        0x04
 
 // ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------

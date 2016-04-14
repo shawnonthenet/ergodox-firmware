@@ -142,6 +142,8 @@ int8_t usb_extra_consumer_send();
 #define AUDIO_MUTE              0x00E2
 #define AUDIO_VOL_UP            0x00E9
 #define AUDIO_VOL_DOWN          0x00EA
+#define TRANSPORT_FAST_FORWARD  0x00B3
+#define TRANSPORT_REWIND        0x00B4
 #define TRANSPORT_NEXT_TRACK    0x00B5
 #define TRANSPORT_PREV_TRACK    0x00B6
 #define TRANSPORT_STOP          0x00B7
